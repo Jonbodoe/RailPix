@@ -79,3 +79,10 @@ li.nav-item {
 footer a{
     color:#5c6070
 }
+#headerImg {
+    background-image: url('../img/ontarioNL.jpg');
+    height: 33rem;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
