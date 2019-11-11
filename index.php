@@ -14,7 +14,9 @@
 </head>
 
 <body>
-    <?php require './assets/navbar.php'; ?>
+    <?php
+    require './assets/navbar.php';
+    ?>
     <header id="header" class="container-fluid">
         <div class="row p-4">
             <div class="col-lg-4 text-white">
@@ -33,7 +35,6 @@
             </div>
             <div class="col-lg-8">
                 <div id="headerImg"></div>
-                <!-- <img class="img-fluid" src="./img/header.jpg" alt="photo og a boxcar of Ontario Northland" /> -->
             </div>
         </div>
     </header>
@@ -49,38 +50,9 @@
                 </div>
             </div>
             <div class="text-white d-flex flex-wrap justify-content-center mb-4">
-                <div class="card m-3 d-inline-block" style="max-width: 20rem;">
-                    <div class="card-header py-3 blue-bg shadow">Header</div>
-                    <img class="card-img-top" src="./img/ontarioNL.jpg" alt="Card image cap">
-                    <div class="card-body blk-md-text">
-                        <h4 class="card-title">Primary card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-                <div class="card m-3 d-inline-block" style="max-width: 20rem;">
-                    <div class="card-header py-3 blue-bg">Header</div>
-                    <img class="card-img-top" src="./img/ontarioNL.jpg" alt="Card image cap">
-                    <div class="card-body blk-md-text">
-                        <h4 class="card-title">Primary card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-                <div class="card m-3 d-inline-block" style="max-width: 20rem;">
-                    <div class="card-header py-3 blue-bg">Header</div>
-                    <img class="card-img-top" src="./img/ontarioNL.jpg" alt="Card image cap">
-                    <div class="card-body blk-md-text">
-                        <h4 class="card-title">Primary card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-                <div class="card m-3 d-inline-block" style="max-width: 20rem;">
-                    <div class="card-header py-3 blue-bg">Header</div>
-                    <img class="card-img-top" src="./img/ontarioNL.jpg" alt="Card image cap">
-                    <div class="card-body blk-md-text">
-                        <h4 class="card-title">Primary card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
+                <?php
+                    require './data/homecards.php'
+                ?>
             </div>
         </div>
     </section>
@@ -111,9 +83,9 @@
                 <div class=" d-flex black-bg h-100">
                     <div class="p-3 mb-4 align-self-center">
                         <div class="p-md-5 text-white">
-                            <h1 class="serif p-3 mt-4">About</h1>
+                            <h1 class="serif p-3 mt-4">Purpose</h1>
                             <p class="px-3 wht-md-text">
-                                To build a project that uses PHP as a backend language for to perform database management. 
+                                To build a project that uses PHP as a backend language for to perform database management.
                                 Which includes using Javascript for interactivity and CSS stylings.
                             </p>
                         </div>
@@ -122,7 +94,10 @@
             </div>
         </div>
     </section>
-    <?php require'./assets/footer.php'?>
+    <?php
+    require './assets/footer.php';
+    ?>
+
 </body>
 
 </html>
