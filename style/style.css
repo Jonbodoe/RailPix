@@ -41,9 +41,6 @@ li.nav-item {
     border-right: 1.2px solid #bababa;
 }
 
-.opacity {
-    opacity: 0.8;
-}
 .black-line {
     height: 0.2rem;
     width: 100%;
@@ -85,4 +82,18 @@ footer a{
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
+}
+#loginImg {
+    background-image: url('../img/loginImg.jpg');
+    background-size: cover;
+    height: 80vh;
+    background-position: center;
+    background-attachment: scroll;
+}
+#loginTxt p{
+    font-size : 18px;
+}
+input#inputPassword, input#inputUser {
+    background-color: #4a4e5e;
+    border: 0px;
 }
