@@ -56,11 +56,11 @@
             </div>
         </div>
     </section>
-    <section class="container-fluid py-5">
+    <section id="about" class="container-fluid py-5">
         <div class="row shadow-md">
             <div class="col-sm-5 blue-bg">
-                <div class=" d-flex h-100">
-                    <div class="p-3 mb-4 align-self-end">
+                <div class="d-flex h-100">
+                    <div class="p-3 mb-4 align-self-end"> 
                         <div class="p-md-5 text-white">
                             <h1 class="serif p-3 mt-4">Our Community</h1>
                             <p class="px-3 wht-md-text">
@@ -81,7 +81,7 @@
             </div>
             <div class="col-sm-4">
                 <div class=" d-flex black-bg h-100">
-                    <div class="p-3 mb-4 align-self-center">
+                    <div class="p-3 mb-4 align-self-end">
                         <div class="p-md-5 text-white">
                             <h1 class="serif p-3 mt-4">Purpose</h1>
                             <p class="px-3 wht-md-text">

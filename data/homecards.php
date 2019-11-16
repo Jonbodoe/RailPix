@@ -16,7 +16,8 @@
                 ';
             }
         } else {
-            echo 'you dun goofed';
+            echo '<div class="blk-md-text">No posts available</div>';
         }
-    
 ?>
+
+<!-- WHEN FILTERING JUST CHANGE THE wHERE SECTION -->

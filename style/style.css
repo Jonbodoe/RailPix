@@ -12,6 +12,12 @@ ul{
 li.nav-item {
     padding: 0.5rem 0.7rem;
 }
+nav {
+    z-index: 99
+}
+html {
+    scroll-behavior: smooth;
+  }
 
 .black-bg {
     background-color: #2E313B
@@ -96,4 +102,23 @@ footer a{
 input#inputPassword, input#inputUser {
     background-color: #4a4e5e;
     border: 0px;
+}
+
+#category {
+    height: 100rem;
+    position: relative;
+}
+#editor {
+    position:fixed;
+    top: 0rem;
+    height: 100vh;
+}
+#sub-bar {
+    position: relative;
+    top: 4.5rem;
+    height: 4rem;
+    width: 100%;
+}
+#results.col-md-9 {
+    padding:0;
 }

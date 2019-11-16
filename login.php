@@ -15,10 +15,10 @@
 
 <body>
     <?php
-    require './assets/navbar.php';
+        require './assets/navbar.php';
     ?>
     <section class="py-4">
-        <div class="container-fluid">
+        <div class="container-fluid mt-5">
             <div class="row">
                 <div id="loginImg" class="col-sm-7 opacity">
                     <div class=" d-flex h-100">
@@ -35,7 +35,7 @@
                     </div>
                 </div>
                 <div class="col-sm-5 black-bg d-flex justify-content-center">
-                    <form class="align-self-center">
+                    <form action="index.php" class="align-self-center">
                         <h1 class="serif text-white py-3">Login to RailPix</h1>
                         <div class="form-group">
                             <label for="inputUser" class="col-form-label text-white">Username</label>
