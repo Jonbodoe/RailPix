@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>RailPix</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="./style/style.css" rel="stylesheet" type="text/css" />
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Rokkitt:400,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+<?php require './data/head.php';?>
 
 <body>
     <?php
@@ -19,15 +6,36 @@
     ?>
     <section>
         <div class="container-fluid">
-            <div id="category" class="row ">
-                <div class="col-md-3 black-bg fixed text-white">
-                    <div id="editor" class="mt-5 text-white">
+            <div class="row">
+                <div id="category" class="col-md-3 black-bg fixed text-white">
+                    <div id="editor" class="mt-5 text-white black-bg">
+                        <div class="p-md-3">
+                            <div class="py-4">
+                                <img class="img-quarter" src="img/RailPix.png" alt="photo of the logo railpix" />
+                            </div>
+                            <div class="black-line"></div>
+                            <h5 class="py-3 font-weight-bold">Categories</h5>
+                            <form>
+                                <label class="wht-md-text" for="type">Type</label><br>
+                                <select id="type" class="custom-select wht-md-text">
+
+                                    <option selected>All</option>
+                                    <option value="1">Locomotives</option>
+                                    <option value="2">Boxcars</option>
+                                    <option value="3">Grainers</option>
+                                    <option value="4">Tankers</option>
+                                    <option value="5">Intermodels</option>
+
+                                </select>
+                            </form>
+                            
+                        </div>
                     </div>
                 </div>
                 <div id="results" class="col-md-9">
                     <div id="sub-bar" class="blue-bg">
                         <?php require "assets/detailsection.php"
-                        
+
                         ?>
                     </div>
                 </div>

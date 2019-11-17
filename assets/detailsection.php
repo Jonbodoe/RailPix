@@ -1,1 +1,3 @@
-<div>hello</div>
+<?php
+    require 'dbConn.php';
+?>

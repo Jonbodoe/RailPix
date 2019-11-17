@@ -1,5 +1,6 @@
 <?php 
     require 'dbConn.php';
+
     $sql = "SELECT * FROM posts";
     $result = $connect->query($sql);
         if($result->num_rows > 0) {
