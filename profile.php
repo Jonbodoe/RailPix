@@ -16,9 +16,12 @@
                     </div>
                 </div>
                 <div class="col-lg-9">
-                    <div class="p-md-4 d-flex justify-content-center">
-                        <div class="">
-                            <?php require './data/usersPosts.php' ?>
+                    <div class="p-md-4">
+                        <div class="d-flex flex-wrap justify-content-center">
+                        <div class="w-100 px-md-2 text-center">
+                            <h5 class="">Personal Collection</h5>
+                        </div>
+                            <?php require './data/usersResults.php' ?>
                         </div>
                     </div>
                 </div>

@@ -36,7 +36,7 @@
                     </form>
                 </div>
             </div>
-            <div class="text-white d-flex flex-wrap justify-content-center mb-4">
+            <div class="text-white d-flex justify-content-center mb-4">
                 <?php
                     require './data/homecards.php'
                 ?>

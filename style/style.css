@@ -2,29 +2,40 @@ body {
     color: #2E313B;
     background-color: #f0f1f2;
 }
+
 h1 {
     margin: 0px;
     line-height: 33px;
 }
-ul{
+
+ul {
     padding: 0rem 1rem;
 }
+
 li.nav-item {
     padding: 0.5rem 0.7rem;
 }
+
 nav {
     z-index: 99
 }
+
 html {
     scroll-behavior: smooth;
-  }
+}
 
 .black-bg {
     background-color: #2E313B
 }
+
+.no-border {
+    border: 0px solid rgba(0, 0, 0, .125)
+}
+
 .blk-md-text {
     color: #4a4e5e;
 }
+
 .wht-md-text {
     color: #e0e0e0;
 }
@@ -33,23 +44,36 @@ html {
     font-family: 'Rokkitt', serif;
     font-weight: 800;
 }
+
 .img-half {
     width: 17rem;
 }
+
 .img-pfl-md {
     width: 13.5vw;
-
 }
+
+.opacity {
+    opacity: 0.7;
+}
+
 .space {
     width: 100%;
     height: 1rem;
 }
+
 .img-quarter {
     width: 9rem;
 }
+.img-mini {
+    width: 3rem;
+    border-radius: 0.2rem;
+}
+
 .white-bg {
     background-color: white;
 }
+
 .nav-seperate {
     height: 2rem;
     border-right: 1.2px solid #bababa;
@@ -59,27 +83,37 @@ html {
     height: 0.2rem;
     width: 100%;
     border-radius: 4rem;
-    background-color:#4a4e5e;
+    background-color: #4a4e5e;
 }
+
 .grey-line {
     height: 0.2rem;
     width: 80%;
     border-radius: 4rem;
-    background-color:#c5c8d6;
+    background-color: #c5c8d6;
 }
-.blue-bg  {
+
+.blue-bg {
     background-color: #3f81f2;
 }
+
 .red-bg {
     background-color: #FF5A5A;
 }
+
+.light-bg {
+    background-color: #f0f1f2;
+}
+
 #explore {
-    padding:0.7rem 3rem;
+    padding: 0.7rem 3rem;
     border-radius: 4rem;
 }
+
 .shadow-md {
     box-shadow: 0px 0px 30px #c7c7c7
 }
+
 #people {
     background-image: url('../img/people.jpg');
     height: 30rem;
@@ -87,9 +121,11 @@ html {
     background-position: center;
     background-attachment: scroll;
 }
-footer a{
-    color:#5c6070
+
+footer a {
+    color: #5c6070
 }
+
 #headerImg {
     background-image: url('../img/ontarioNL.jpg');
     height: 33rem;
@@ -97,6 +133,7 @@ footer a{
     background-position: center;
     background-attachment: scroll;
 }
+
 #loginImg {
     background-image: url('../img/loginImg.jpg');
     background-size: cover;
@@ -104,14 +141,17 @@ footer a{
     background-position: center;
     background-attachment: scroll;
 }
-#loginTxt p{
-    font-size : 18px;
+
+#loginTxt p {
+    font-size: 18px;
 }
-input#inputPassword, input#inputUser, form select.custom-select{
+
+input#inputPassword, input#inputUser, form select.custom-select {
     background-color: #4a4e5e;
     border: 0px;
 }
-form select.custom-select, .form-control{
+
+form select.custom-select, .form-control {
     width: 16rem;
 }
 
@@ -119,27 +159,42 @@ form select.custom-select, .form-control{
     height: 100rem;
     position: relative;
 }
+
 #editor {
-    position:fixed;
+    position: fixed;
     top: 0rem;
     height: 100vh;
 }
+
 #sub-bar {
     position: relative;
     top: 4.5rem;
     height: 4rem;
     width: 100%;
 }
+
 #results.col-md-9 {
-    padding:0;
+    padding: 0;
 }
+
 .active {
     background-color: #f0f1f2;
 }
+
 a.nav-link {
     border-radius: 0.25rem;
     transition: 0.2s all
 }
+
 a.nav-link:hover {
     background-color: #f0f1f2;
+}
+
+#add-photo, .post {
+    transition: 0.4s all;
+}
+
+.post:hover {
+    background-color: #f0f1f2;
+    opacity: 0.8;
 }
