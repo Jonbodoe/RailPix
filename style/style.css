@@ -133,4 +133,13 @@ form select.custom-select, .form-control{
 #results.col-md-9 {
     padding:0;
 }
-
+.active {
+    background-color: #f0f1f2;
+}
+a.nav-link {
+    border-radius: 0.25rem;
+    transition: 0.2s all
+}
+a.nav-link:hover {
+    background-color: #f0f1f2;
+}

@@ -2,7 +2,7 @@
 
 <body>
     <?php
-    require './assets/navbar.php';
+        require './assets/navbar.php';
     ?>
     <header id="header" class="container-fluid pt-5 mt-3">
         <div class="row p-4">
@@ -82,7 +82,7 @@
         </div>
     </section>
     <?php
-    require './assets/footer.php';
+        require './assets/footer.php';
     ?>
 
 </body>

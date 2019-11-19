@@ -24,7 +24,7 @@
                 <div class="col-sm-5">
                     <div class="d-flex justify-content-center black-bg w-100 h-100">
                         <div class="align-self-center">
-                            <form action="./" method="post">
+                            <form action="" method="post">
                                 <h1 class="serif text-white py-3">Login to RailPix</h1>
                                 <div class="form-group">
                                     <label for="inputUser" class="col-form-label text-white">Username</label>

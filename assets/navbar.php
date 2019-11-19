@@ -6,21 +6,7 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="./index.php">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="./index.php#about">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="./catalog.php">Catalog</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="./profile.php">Profile</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="./login.php">Login</a>
-      </li>
+      <?php require './data/navLinks.php'?>
     </ul>
     <div class="nav-seperate"></div>
     <form class="d-none d-sm-inline-block form-inline ml-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">

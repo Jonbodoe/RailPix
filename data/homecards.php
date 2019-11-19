@@ -1,7 +1,7 @@
 <?php 
     require 'dbConn.php';
 
-    $sql = "SELECT * FROM posts";
+    $sql = "SELECT * FROM posts LIMIT 4";
     $result = $connect->query($sql);
         if($result->num_rows > 0) {
             while($item = $result->fetch_assoc()) {

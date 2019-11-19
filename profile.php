@@ -16,8 +16,10 @@
                     </div>
                 </div>
                 <div class="col-lg-9">
-                    <div class="">
-                        Total Posts
+                    <div class="p-md-4 d-flex justify-content-center">
+                        <div class="">
+                            <?php require './data/usersPosts.php' ?>
+                        </div>
                     </div>
                 </div>
             </div>
