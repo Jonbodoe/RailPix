@@ -1,5 +1,5 @@
 <?php 
-    require 'dbConn.php';
+    require (dirname(__FILE__).'/../dbConn.php');
 
     $sql = "SELECT * FROM posts LIMIT 4";
     $result = $connect->query($sql);

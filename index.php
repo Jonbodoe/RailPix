@@ -38,7 +38,7 @@
             </div>
             <div class="text-white d-flex justify-content-center mb-4">
                 <?php
-                    require './data/homecards.php'
+                    require './data/home/homecards.php'
                 ?>
             </div>
         </div>

@@ -7,7 +7,7 @@
     <section class="pt-5 mt-3">
         <div class="container-fluid p-4">
             <div class="row px-3">
-                <div class="col-sm-7 opacity">
+                <div class="col-sm-7">
                     <div id="loginImg" class=" d-flex w-100">
                         <div class="p-3 mb-4 align-self-center">
                             <div class="p-md-5">
@@ -40,7 +40,7 @@
                                         <button type="submit" class="btn btn-primary">Sign in</button>
                                     </div>
                                 </div>
-                                <?php require "./data/loginUser.php"; ?>
+                                <?php require "./data/login/loginUser.php"; ?>
                             </form>
                         </div>
                     </div>
