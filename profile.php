@@ -30,7 +30,7 @@
         </div>
     </section>
     <?php require './assets/footer.php' ?>
-    <script type="module" src="./js/eventListener.js"></script>
+    <script type="module" src="./js/popup.js"></script>
     <script type="module" src="./js/fileUpload.js"></script>
 </body>
 

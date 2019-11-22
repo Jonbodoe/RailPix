@@ -20,8 +20,8 @@
                             <div class="w-100 px-md-2 text-center d-flex justify-content-center">
                                 <div>
                                 <h5 class="">Post Details</h5>
-                                <?php require './data/profile/singlePost.php'?>
-</div>
+                                    <?php require './data/profile/singlePost.php'?>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -32,5 +32,5 @@
     <?php
         require './assets/footer.php';
     ?>
-    <script src="./js/eventListener.js"></script>
+    <script src="./js/postEvents.js"></script>
 </body>

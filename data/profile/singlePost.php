@@ -30,10 +30,15 @@
                             <div class="light-bg" style="min-width:30rem">
                                 <img class="img-fluid" src="./img/' . $item["img_str"] . '" alt="' . $item["details"] . '"/>
                                 <div class="text-left p-3 blk-md-text">
-                                    <div class="font-weight-bold">Description</div>
+                                    <div class="font-weight-bold ">Description</div>
                                     <div>' . $item['details'] . '</div>
-                                    <div class="blk-md-text py-3"><i class="fa fa-pencil px-2"></i>edit</div>
-                                    
+                                    <div id="edit" class="blk-md-text text-right">
+                                        edit
+                                    </div>
+                                    <div id="comment" class="font-weight-bolder">Comments</div>
+                                    <div id="makeComment" class="hidden">
+                                        <div>hello</div>
+                                    </div>
                                 </div>
                             </div>
                             </div>
@@ -41,7 +46,6 @@
                     </div>
                 </div>
             ';
-            // echo print_r($item);
         }
     } else {
         echo 'errorrrr';
