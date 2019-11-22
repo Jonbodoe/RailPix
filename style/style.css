@@ -40,7 +40,9 @@ html {
 .wht-md-text {
     color: #e0e0e0;
 }
-
+.text-black{
+    color: #2E313B;
+}
 .serif {
     font-family: 'Rokkitt', serif;
     font-weight: 800;
@@ -240,4 +242,7 @@ a.nav-link:hover {
 }
 a.post-container {
     color: #2E313B;
+}
+textarea#comment {
+    border: 0px;
 }

@@ -1,6 +1,6 @@
 <?php
     require (dirname(__FILE__).'/../dbConn.php');
-    
+
     $user = $_SESSION['username'];
     $sql = "SELECT * FROM profiles WHERE username ='$user';";
     $result = $connect->query($sql);
