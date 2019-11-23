@@ -3,17 +3,16 @@ document.addEventListener('click', function(e) {
 });
 
 function popup(event) {
-    if (!event.target.matches('.add') && event.target.matches('#pageBlur')) {
+    if (!event.target.matches('.add') && !event.target.matches('#pageBlur')) {
         return
     } else if (event.target.matches('.add')) { 
+        console.log('helloish')
         document.getElementById('displayForm').classList.remove('hidden');
-        document.getElementById('profile').classList.add('noscroll');
         
     } else if (event.target.matches('#pageBlur')) {
+        console.log('hello')
         document.getElementById('displayForm').classList.add('hidden');
     } 
-
-    // MAKE LAST CONDITIONAL WORK.
 }
 
 
