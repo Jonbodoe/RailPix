@@ -11,5 +11,5 @@ function loader (e) {
     document.getElementById('image').src = e.target.result;
 };
 
-function passToURL(){
-}
+// function passToURL(){
+// }
