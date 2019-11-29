@@ -19,11 +19,10 @@
                         <div class="">
                             <h5 class="">Post Details</h5>
                             <div class=" mt-4 white-bg shadow" style="max-width: 43rem">
-                                <div class="">
-                                    <?php 
-                                        require './data/profile/postDetail.php';
-                                        require './data/profile/makeComments.php';
-                                    ?>
+                                <?php 
+                                    require './data/profile/postDetail.php';
+                                    require './data/profile/makeComments.php';
+                                ?>
                             </div>
                         </div>
                     </div>

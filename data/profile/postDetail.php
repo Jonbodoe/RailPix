@@ -7,7 +7,7 @@
 
     $sql = "SELECT profiles.profile_id, profiles.username, profiles.profile_img, posts.*, comments.*
         FROM profiles 
-        JOIN posts on (posts.id = $post)
+        JOIN posts on (posts.post_id = $post)
         JOIN comments on (comments.post_ref = $post)
         WHERE comments.user_ref = profiles.profile_id
     ";

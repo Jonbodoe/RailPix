@@ -26,7 +26,7 @@
         </div>
     </header>
     <section class="py-4">
-        <div class="container-fluid py-3 shadow-md white-bg">
+        <div class="container-fluid py-3 shadow-sm white-bg">
             <div class="row d-flex justify-content-center">
                 <div class="text-center blk-md-text py-4">
                     <h2 class="serif">Photo Gallery</h2>

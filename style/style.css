@@ -168,15 +168,14 @@ form select.custom-select, .form-control {
 
 #editor {
     position: fixed;
-    top: 0rem;
+    top: 1.2rem;
+    /* left: 1rem; */
     height: 100vh;
 }
 
-#sub-bar {
+.category-list {
     position: relative;
-    top: 4.5rem;
-    height: 4rem;
-    width: 100%;
+    top: 3.5rem;
 }
 
 #results.col-md-9 {
@@ -246,3 +245,4 @@ a.post-container {
 textarea#comment {
     border: 0px;
 }
+/* s */

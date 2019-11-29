@@ -7,9 +7,9 @@ $post = $_GET["post"];
 $comment = $_POST['comment'];
 $date = date("Y-m-d H:i:s");
 
-$query = "SELECT profiles.profile_id, profiles.username, posts.id
+$query = "SELECT profiles.profile_id, profiles.username, posts.post_id
 FROM profiles 
-JOIN posts on (posts.id = $post)
+JOIN posts on (posts.post_id = $post)
 WHERE profiles.username ='$user' 
 ";
 
@@ -17,7 +17,7 @@ $result = $connect->query($query);
 if ($result->num_rows > 0) {
     while ($item = $result->fetch_assoc()) {
         $user_id = $item['profile_id'];
-        $blog_id = $item['id'];
+        $blog_id = $item['post_id'];
     }
 } else {
     echo 'didnt work';

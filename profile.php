@@ -7,10 +7,10 @@
     ?>
 
     <section id="profile">
-        <div class="container-fluid pt-5 mt-3">
+        <div class="container-fluid pt-5">
             <div class="row p-xl-4">
-                <div class="col-lg-3 text-white d-flex justify-content-center">
-                    <div class="text-white black-bg shadow-md h-100" style="max-width: 23rem">
+                <div class="col-lg-3 text-white d-flex justify-content-center" style="max-width: 330px">
+                    <div class="text-white black-bg shadow-md h-100">
                         <div class="d-flex justify-content-center pb-5">
                             <?php require './data/profile/profileInfo.php'; ?>
                         </div>
