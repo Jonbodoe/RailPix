@@ -1,5 +1,4 @@
 document.addEventListener('click', postEvents);
-console.log('hello')
 
 function postEvents(e) {
     // console.log('hello')

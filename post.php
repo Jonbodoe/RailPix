@@ -21,7 +21,8 @@
                             <div class=" mt-4 white-bg shadow" style="max-width: 43rem">
                                 <?php 
                                     require './data/profile/postDetail.php';
-                                    require './data/profile/makeComments.php';
+                                    // require './data/profile/makeComments.php';
+                                    // require './data/profile/ajaxComments.php';
                                 ?>
                             </div>
                         </div>
@@ -33,7 +34,6 @@
     <?php
     require './assets/footer.php';
     ?>
-    <script src="./js/postEvents.js"></script>
-
-
+    <script  type="text/javascript" src="./js/postEvents.js"></script>
+    <script  src="./js/submitComment.js"></script>
 </body>

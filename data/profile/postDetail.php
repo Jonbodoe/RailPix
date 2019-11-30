@@ -36,6 +36,7 @@
                             <div class="font-weight-bold">
                                 Comments
                             </div>
+                            <div id="loadComments">
                             <div class="py-1 d-flex justify-content-between">
                                 <div class="text-left">
                                     <div class="pr-3 text-black">' . $item["username"] . '</div>
@@ -70,23 +71,19 @@
                 </div> 
             ';
             }
-            
-
     }
-
     } else {
         echo 'error, please login or reload page';
     }
     echo '
-        <form action="" method="post" class="py-3">
+        <form action="" method="get" class="py-3">
             <div class="form-group">
                 <label for="comment">Add a comment</label>
                 <textarea class="form-control w-75" name="comment" id="comment" rows="3"></textarea>
             </div>
             <input type="hidden" name="display" value="1">
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button id="submitComment" type="submit" class="btn btn-primary">Submit</button>
         </form>
-        </div></div></div>
+        </div></div></div></div>
     ';
-
 

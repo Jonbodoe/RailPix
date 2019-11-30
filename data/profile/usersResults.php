@@ -16,7 +16,7 @@ if ($result->num_rows > 0) {
         <a class="post-container" href="post.php?post='. $item['post_id'] .'">
             <div class="post card m-4 d-inline-block no-border shadow-sm" style="max-width: 23rem;">
                 <div class="card-header shadow d-flex flex-row">
-                    <img class="img-mini" src="./img/jonbodoe.jpg" alt="photo of user"/>
+                    <img class="img-mini" src="./img/'. $item['profile_img'] .'" alt="photo of user"/>
                     <div class="align-self-center px-3">' . $item['username'] . '</div>
                 </div>
                 <img class="card-img-top" src="./img/' . $item['img_str'] . '" alt="Card image cap">
