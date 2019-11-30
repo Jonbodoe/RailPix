@@ -21,9 +21,25 @@
                             <div class=" mt-4 white-bg shadow" style="max-width: 43rem">
                                 <?php 
                                     require './data/profile/postDetail.php';
-                                    require './data/profile/makeComments.php';
+                                    require './data/post/listComments.php';
+                                    // require './data/profile/makeComments.php';
                                     // require './data/profile/ajaxComments.php';
                                 ?>
+                                <!-- half of postdetails static info  -->
+                                        <form action="" method="post" class="py-3">
+                                            <div class="form-group">
+                                                <label for="comment">Add a comment</label>
+                                                <textarea class="form-control w-75" name="comment" id="comment" rows="3"></textarea>
+                                            </div>
+                                            <input type="hidden" name="display" value="1">
+                                            <button id="submitComment" type="submit" class="btn btn-primary">Submit</button>
+                                        </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- postdetails static info -->
+
                             </div>
                         </div>
                     </div>

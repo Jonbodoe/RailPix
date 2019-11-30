@@ -27,11 +27,9 @@
                         <div class="font-weight-bolder">Last Activity</div>
                         <p class="wht-md-text">' . $item['last_login'] . '</p>
                     </div>
-                </div>
-            
+                </div>      
             ';
             }
-
         } else {
             echo '<div class="blk-md-text">No posts available</div>';
         }

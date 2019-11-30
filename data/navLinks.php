@@ -8,8 +8,7 @@
 
 $noLogin = array(
     'index.php' => 'Home', 
-    'catalog.php' => 'Catalog', 
-    'profile.php' => 'Profile', 
+    'index.php#about' => 'About', 
     'login.php' => 'Login'
 );
 
@@ -22,40 +21,25 @@ $login  = array(
 
 $currentLink = basename($_SERVER['REQUEST_URI'], '?' . $_SERVER['QUERY_STRING']);
 
-if (isset($_SESSION['username'])) {
-    login($login, $currentLink);
-} else {
-    login($noLogin, $currentLink);
-}
+isset($_SESSION['username']) ? login($login, $currentLink) : login($noLogin, $currentLink);
 
-function login ($login, $userlink) {
-    foreach ($login as $link => $value) {
+function login ($list, $userlink) {
+    foreach ($list as $link => $value) {
         if ($userlink == $link) {
-            echo '<li class="nav-item">
+            echo 
+            '<li class="nav-item">
                 <a class="nav-link active" href="./' . $link . '">' . $value . '</a>
             </li>';
         } else {
-            echo '<li class="nav-item">
+            echo 
+            $value == 'Login' ? 
+            '<li class="nav-item">
+                <a class="nav-link login" href="./' . $link . '">' . $value . '</a>
+            </li>' : 
+            '<li class="nav-item">
                 <a class="nav-link" href="./' . $link . '">' . $value . '</a>
             </li>';
         }
     }
 }
 
-// function nologin ($nologin, $userlink) {
-//     foreach ($nologin as $link => $value) {
-//         if ($userlink == $link) {
-//             echo '<li class="nav-item">
-//                 <a class="nav-link active" href="./' . $link . '">' . $value . '</a>
-//             </li>';
-//         } else {
-//             echo '<li class="nav-item">
-//                 <a class="nav-link" href="./' . $link . '">' . $value . '</a>
-//             </li>';
-//         }
-//     }
-// }
-    // function isLogin() {
-        
-    // }
-    // isLogin();

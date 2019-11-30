@@ -246,3 +246,8 @@ textarea#comment {
     border: 0px;
 }
 /* s */
+
+a.login {
+    background-color:#ff614f;
+    color: white !important;
+}
