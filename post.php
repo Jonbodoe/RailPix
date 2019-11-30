@@ -10,7 +10,7 @@
                 <div class="col-lg-3 text-white d-flex justify-content-center">
                     <div class="text-white black-bg shadow-md h-100" style="max-width: 23rem">
                         <div class="d-flex justify-content-center pb-5">
-                            <?php require './data/profile/profileInfo.php'; ?>
+                            <?php require './data/profile/profilePost.php'; ?>
                         </div>
                     </div>
                 </div>
@@ -21,7 +21,7 @@
                             <div class=" mt-4 white-bg shadow" style="max-width: 43rem">
                                 <?php 
                                     require './data/profile/postDetail.php';
-                                    // require './data/profile/makeComments.php';
+                                    require './data/profile/makeComments.php';
                                     // require './data/profile/ajaxComments.php';
                                 ?>
                             </div>

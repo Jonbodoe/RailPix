@@ -37,11 +37,14 @@
                     </div>
                 </div>
                 <div id="results" class="col-md-9">
-                    <div class="category-list">
-                        <?php 
-                            require "./data/catalog/catalogPosts.php"
-                        ?>
-                    </div>
+                    <div class="p-md-4 category-list">
+                        <div class="d-flex flex-wrap justify-content-center">
+                            <div class="w-100 px-md-2 text-center">
+                                <h5 class="">Collections</h5>
+                                <?php require './data/catalog/catalogPosts.php';?>
+                            </div>
+                        </div>
+                      </div>
                 </div>
             </div>
     </section>

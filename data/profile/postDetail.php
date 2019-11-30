@@ -46,7 +46,6 @@
                                     <a href="commentEdit.php?post=' . $post . '&edit=' . $item["comment_id"] . '"><i class="fa fa-pencil"></i></a><br/>
                                 </div>     
                             </div> 
-
                 ';
                 $imageContent = true;
             } elseif ($user == $item['username']) {
@@ -76,7 +75,7 @@
         echo 'error, please login or reload page';
     }
     echo '
-        <form action="" method="get" class="py-3">
+        <form action="" method="post" class="py-3">
             <div class="form-group">
                 <label for="comment">Add a comment</label>
                 <textarea class="form-control w-75" name="comment" id="comment" rows="3"></textarea>

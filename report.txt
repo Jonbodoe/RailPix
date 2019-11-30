@@ -6,7 +6,7 @@
 - Create login welcome page of list of posts.
 - Add Ajax to adding and removing comments
 - Category Page
-    - List of dropdown
     - All results + filtering change
 - Google Maps
     - And styling it.
+- Fix postDetail to be in sync with the profile of the user.
