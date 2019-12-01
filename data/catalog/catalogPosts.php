@@ -1,12 +1,24 @@
 <?php
     require (dirname(__FILE__).'/../dbConn.php');
 
-    $sql = "SELECT profiles.profile_id, profiles.username, profiles.profile_img, posts.*, types.*
+
+
+    $type = $_GET['types'];
+    $state = $_GET['states'];
+    $divisions = $_GET['divisions'];
+
+    $typeCheck = isset($type) ? "types.type_id = $type ": '';
+    $divisionCheck = isset($divisions) ? "AND divisions.division_id = $divisions" : '';
+    $stateCheck = isset($state) ? "AND states.state_id = $state" : '';
+    $whereCheck = $typeCheck || $divisionCheck || $stateCheck ? WHERE : '';
+
+    $sql = "SELECT profiles.profile_id, profiles.username, profiles.profile_img, posts.*, types.*, divisions.*
             FROM profiles 
             JOIN posts ON (profiles.profile_id = posts.user_id)
             JOIN types on (posts.category = types.type_id)
-            ";
-
+            JOIN divisions on (divisions.division_id = posts.division_ref)
+            " . $whereCheck ." ". $typeCheck . " " . $stateCheck . " " . $divisionCheck . "";
+        
 
     $result = $connect->query($sql);
     if ($result->num_rows > 0) {
@@ -30,7 +42,5 @@
     } else {
         echo "oh no";
     }
-
-
 
 ?>

@@ -39,7 +39,7 @@
                                                         <button type="submit" name="delete" class="btn white-bg">Delete</button>
                                                     </div>
                                                 </form>
-                                                <?php require './data/profile/commentEditor.php' ?>
+                                                <?php require './data/post/commentEditor.php' ?>
                                             </div>
                                         </div>
                                     </div>

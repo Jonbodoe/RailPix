@@ -22,9 +22,11 @@ if ($result->num_rows > 0) {
 } else {
     echo 'didnt work';
 }
+
 $user = $user_id;
 $blog = $blog_id;
 
+echo $_POST['comment'];
 if ($_POST['comment']) {
     $sql = "INSERT INTO railpix.comments (comment_id, user_ref, post_ref, comment_message, comment_date)
         VALUES (NULL, '" . $user . "','" . $blog . "','" . $comment . "','" . $date . "')";

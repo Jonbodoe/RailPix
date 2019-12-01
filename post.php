@@ -20,9 +20,9 @@
                             <h5 class="">Post Details</h5>
                             <div class=" mt-4 white-bg shadow" style="max-width: 43rem">
                                 <?php 
-                                    require './data/profile/postDetail.php';
+                                    require './data/post/postDetail.php';
                                     require './data/post/listComments.php';
-                                    // require './data/profile/makeComments.php';
+                                    require './data/post/makeComments.php';
                                     // require './data/profile/ajaxComments.php';
                                 ?>
                                 <!-- half of postdetails static info  -->
