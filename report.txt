@@ -1,12 +1,5 @@
-- Profile Posts
-    - Need to refactor to only have the comments seperated so that it can be loaded with AJAX more fluidly
-
 - Upload File into PHP doc
-- Change Nav bar to highlight login
 - Create login welcome page of list of posts.
-- Add Ajax to adding and removing comments
-- Category Page
-    - All results + filtering change
+- Add Ajax to comments / categories
 - Google Maps
     - And styling it.
-- Fix postDetail to be in sync with the profile of the user.

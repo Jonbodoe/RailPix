@@ -22,7 +22,9 @@
                             <div class="w-100 px-md-2 text-center">
                                 <h5 class="">Personal Collection</h5>
                             </div>
-                            <?php require './data/profile/usersResults.php' ?>
+                            <?php 
+                                require './data/profile/usersResults.php';
+                            ?>
                         </div>
                     </div>
                 </div>
@@ -30,8 +32,6 @@
         </div>
     </section>
     <?php require './assets/footer.php' ?>
-    <script type="module" src="./js/popup.js"></script>
-    <script type="module" src="./js/fileUpload.js"></script>
 </body>
 
 </html>

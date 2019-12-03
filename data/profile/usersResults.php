@@ -37,12 +37,14 @@ function isOdd($posts)
 {
     if ($posts % 2 == 1) {
         echo '
-            <div id="add-photo" class="add post white-bg m-4 d-inline-block no-border shadow-sm d-flex" style="width: 23rem; border-radius: .25rem">
+        <a class="post-container" href="upload.php">
+            <div id="add-photo" class="add post white-bg m-4 d-inline-block no-border shadow-sm d-flex" style="width: 23rem; height: 422.917px; border-radius: .25rem">
                 <div class="add text-center blk-md-text w-100 align-self-center">
                     <img class="add img-quarter p-4 m-1 opacity" src="./img/cross-blk.png" alt="photo of a plus sign to add photo"/>
                     <div class="add">Add Photo</div>
                 </div>
             </div>
+        </a>
         ';
     }
 }

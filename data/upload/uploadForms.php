@@ -2,13 +2,12 @@
     require (dirname(__FILE__).'/../dbConn.php');
 
     $listTables = ['type_freight'=>'type','division_title'=>'division','state_name'=>'state'];
-    echo '<form class="">';
 
     foreach ($listTables as $table => $value) {
         $values = "".$value."s";
         echo '
-                <label class="wht-md-text py-1" for="' . $values . '">'. ucfirst($values) .'</label><br>
-                <select name="' . $values . '" id="' . $values . '" class="custom-select blk-select wht-md-text">
+                <label class="blk-md-text py-1" for="' . $values . '">'. ucfirst($values) .'</label><br>
+                <select name="' . $values . '" id="' . $values . '" class="custom-select upload-form lgt-select blk-md-text no-border">
                 <option disabled selected>Select</option>
             ';
         $sql = "SELECT * FROM " . $values . "";
@@ -22,11 +21,7 @@
         else {
         echo 'error, please login or reload page';
         }
-        echo '</select><br><br>';
+        echo '</select><br>';
     }
-    echo '
-            <button id="submitComment" type="submit" class="btn btn-primary">Submit
-            </button>
-        </form>';
 
 ?>
