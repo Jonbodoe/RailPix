@@ -7,7 +7,7 @@
         $values = "".$value."s";
         echo '
                 <label class="blk-md-text py-1" for="' . $values . '">'. ucfirst($values) .'</label><br>
-                <select name="' . $values . '" id="' . $values . '" class="custom-select upload-form lgt-select blk-md-text no-border">
+                <select name="' . $values . '" id="' . $values . '" class="custom-select upload-form lgt-select blk-md-text no-border" style="width:18rem" required>
                 <option disabled selected>Select</option>
             ';
         $sql = "SELECT * FROM " . $values . "";

@@ -16,6 +16,7 @@ $login  = array(
     'index.php' => 'Home', 
     'catalog.php' => 'Catalog', 
     'profile.php' => 'Profile', 
+    'upload.php' => 'Upload',
     'logout.php' => 'Logout'
 );
 
@@ -32,7 +33,7 @@ function login ($list, $userlink) {
             </li>';
         } else {
             echo 
-            $value == 'Login' ? 
+            $value == 'Login' || $value == 'Upload' ? 
             '<li class="nav-item">
                 <a class="nav-link login" href="./' . $link . '">' . $value . '</a>
             </li>' : 

@@ -23,32 +23,29 @@ require './data/head.php';
                         <div class="d-flex flex-wrap justify-content-center">
                             <div id="uploadContainer" class="px-md-2">
                                 <h5 class="text-center">Upload</h5>
-                                <?php require './assets/test.php'; ?>
+                                <?php require './data/upload/uploadPost.php' ?>
                                 <div class="white-bg borderRadius my-2 text-left shadow-sm ">
                                     <h5 class="py-3 text-center font-bold blue-bg text-white">Create Post</h5>
                                     <div class="d-flex justify-content-center" id="imageContent">
                                         <img class="img-fluid" id="img" />
                                     </div>
-                                    <form class="p-4 d-flex justify-content-center" method="post" action="" enctype="multipart/form-data">
+                                    <form action="" class="p-4 d-flex justify-content-center" method="post" action="" enctype="multipart/form-data">
                                         <div class="form-group">
                                             <label for="exampleFormControlFile1">Choose Photo</label><br>
-                                            <input id="upload" class="" name="img" type="file" class="form-control-file">
-                                            <!-- <button id="submitComment" type="submit" name="submit" class="btn btn-primary">Submit</button> -->
-                                        </div>
-                                        <div class="form-group">
-                                            <div id="displayForms" class="">
+                                            <input id="upload" class="" name="img" type="file" class="form-control-file" required>
+                                        <!-- </div>
+                                        <div class="form-group"> -->
+                                            <div id="displayForms" class="my-3">
                                                 <!-- <div class="px-3"> -->
                                                     <label for="details">Add a Description</label>
-                                                    <textarea class="form-control light-bg no-border" name="details" id="details" rows="4" style="width:18rem"></textarea>
-                                                <!-- </div>
-                                                <div class="px-3"> -->
+                                                    <textarea class="form-control light-bg no-border my-2" name="details" id="details" rows="4" style="width:18rem" placeholder="Write a description" required></textarea>
+                                                    <label for="details">County</label>
+                                                    <input class="form-control light-bg no-border type="text" name="county" placeholder="County" style="width:18rem" required>
                                                     <input type="hidden" name="display" value="1">
                                                     <?php require './data/upload/uploadForms.php' ?>
-                                                <!-- </div> -->
+
+                                                    <button id="submitComment" name="submit" type="submit" class="btn btn-primary my-4">Submit</button>
                                             </div>
-                                            <form class="my-3">
-                                                <button id="submitComment" type="submit" class="btn btn-primary my-4">Submit</button>
-                                            </form>
                                         </div>
                                     </form>
                                 </div>

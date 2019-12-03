@@ -35,7 +35,7 @@ if ($result->num_rows > 0) {
 
 function isOdd($posts)
 {
-    if ($posts % 2 == 1) {
+    if ($posts % 2 == 0) {
         echo '
         <a class="post-container" href="upload.php">
             <div id="add-photo" class="add post white-bg m-4 d-inline-block no-border shadow-sm d-flex" style="width: 23rem; height: 422.917px; border-radius: .25rem">

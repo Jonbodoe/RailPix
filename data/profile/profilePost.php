@@ -3,7 +3,6 @@
 
     $post = $_GET['post'];
 
-    $sql = "SELECT * FROM profiles WHERE username ='$user';";
 
     $sql = "SELECT profiles.*, posts.user_id FROM profiles
             JOIN posts ON posts.post_id = $post

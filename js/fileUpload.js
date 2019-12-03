@@ -14,9 +14,3 @@ function loader (e) {
 function showContent() {
     document.getElementById('displayForms').classList.remove('hidden');
 }
-// document.getElementById('submitComment').addEventListener('click', (e)=>{
-//     e.preventDefault;
-// });
-
-// function passToURL(){
-// }
