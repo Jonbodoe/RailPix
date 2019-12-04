@@ -4,13 +4,13 @@
 
 
     $type = $_GET['types'];
-    $state = $_GET['states'];
+    $state = $_GET['state'];
     $divisions = $_GET['divisions'];
 
     $typeCheck = isset($type) ? "types.type_id = $type ": '';
     $divisionCheck = isset($divisions) ? "AND divisions.division_id = $divisions" : '';
     $stateCheck = isset($state) ? "AND states.state_id = $state" : '';
-    $whereCheck = $typeCheck || $divisionCheck || $stateCheck ? WHERE : '';
+    $whereCheck = $typeCheck || $divisionCheck || $stateCheck ? "WHERE" : '';
 
     $sql = "SELECT profiles.profile_id, profiles.username, profiles.profile_img, posts.*, types.*, divisions.*
             FROM profiles 

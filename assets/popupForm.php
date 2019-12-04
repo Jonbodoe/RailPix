@@ -9,7 +9,6 @@
             <div class="form-group">
                 <label for="exampleFormControlFile1">Choose Photo</label>
                 <input id="import" name="img" type="file" class="form-control-file">
-                <!-- <button id="submitComment" type="submit" name="submit" class="btn btn-primary">Submit</button> -->
             </div>
             <div class="form-group">
                 <label for="details">Add a Description</label>
