@@ -33,15 +33,12 @@ require './data/head.php';
                                         <div class="form-group">
                                             <label for="exampleFormControlFile1">Choose Photo</label><br>
                                             <input id="upload" class="" name="img" type="file" class="form-control-file" required>
-                                        <!-- </div>
-                                        <div class="form-group"> -->
                                             <div id="displayForms" class="my-3 hidden">
-                                                <!-- <div class="px-3"> -->
                                                     <label for="details">Add a Description</label>
                                                     <textarea class="form-control light-bg no-border my-2" name="details" id="details" rows="4" style="width:18rem" placeholder="Write a description" required></textarea>
                                                     <label for="details">County</label>
                                                     <input class="form-control light-bg no-border type="text" name="county" placeholder="County" style="width:18rem">
-                                                    <input type="hidden" name="display" value="1">
+                                                    <input type="hidden" name="posted" value="1">
                                                     <?php require './data/upload/uploadForms.php' ?>
 
                                                     <button id="submitComment" name="submit" type="submit" class="btn btn-primary my-4">Submit</button>

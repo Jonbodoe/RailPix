@@ -12,7 +12,7 @@ if($result->num_rows > 0) {
     echo 'no';
 }
 
-$submit = $_POST['submit'];
+$submit = $_POST['posted'];
 $display = $_POST['display'];
 $file = $_FILES['img']['name'];
 $description = $_POST['details'];
@@ -21,11 +21,8 @@ $state = $_POST['states'];
 $divisions = $_POST['divisions'];
 $county = $_POST['county'];
 
-// if(isset($file)){
-//     echo "<img class='img-half' src='./img/". $file ."' alt=''/>";
-// }
 
-if (isset($_POST['submit'])) {
+if (isset($_POST['posted'])) {
     $sqli = $connect->prepare("INSERT INTO railpix.posts (post_id, img_str, category, division_ref, details, user_id, county, state_ref, google_ref)
             VALUES (NULL,'" . $file . "'," . $type . "," . $divisions . ", ? ," . $userId . ", '" . $county . "', " . $state . ", 0)");
     $sqli->bind_param('s', $description);

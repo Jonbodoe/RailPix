@@ -26,7 +26,6 @@ if ($result->num_rows > 0) {
 $user = $user_id;
 $blog = $blog_id;
 
-// echo $_POST['comment'];
 if ($_POST['comment']) {
     $sql = $connect->prepare("INSERT INTO railpix.comments (comment_id, user_ref, post_ref, comment_message, comment_date)
         VALUES (NULL, '" . $user . "','" . $blog . "', ? ,'" . $date . "')");
@@ -39,7 +38,5 @@ if ($_POST['comment']) {
         echo "<br>added comment!";
     }
 }
-
-// $date = date("Y-m-d H:i:s");
 
 ?>

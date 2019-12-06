@@ -8,8 +8,8 @@
     $divisions = $_GET['divisions'];
 
     $typeCheck = isset($type) ? "types.type_id = $type ": '';
-    $divisionCheck = isset($divisions) ? "divisions.division_id = $divisions" : '';
-    $stateCheck = isset($state) ? "states.state_id = $state" : '';
+    $divisionCheck = isset($divisions) ? "AND divisions.division_id = $divisions" : '';
+    $stateCheck = isset($state) ? "AND states.state_id = $state" : '';
     $whereCheck = $typeCheck || $divisionCheck || $stateCheck ? "WHERE" : '';
 
     $sql = "SELECT profiles.profile_id, profiles.username, profiles.profile_img, posts.*, types.*, divisions.*
@@ -18,6 +18,7 @@
             JOIN types on (posts.category = types.type_id)
             JOIN divisions on (divisions.division_id = posts.division_ref)
             " . $whereCheck ." ". $typeCheck . " " . $stateCheck . " " . $divisionCheck . "";
+            // Figure out how to set up AND's added
         
 
     $result = $connect->query($sql);
@@ -40,7 +41,7 @@
             ';
         }
     } else {
-        echo "oh no";
+        echo "no results ):";
     }
 
 ?>
