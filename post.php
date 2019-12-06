@@ -18,6 +18,7 @@
                     <div class="w-100 px-md-2 text-center d-flex justify-content-center">
                         <div class="">
                             <h5 class="">Post Details</h5>
+                            <?php require './data/upload/uploadPost.php'?>
                             <div class=" mt-4 white-bg shadow" style="max-width: 43rem">
                                 <?php 
                                     require './data/post/postDetail.php';

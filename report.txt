@@ -1,5 +1,7 @@
-- Upload File into PHP doc
 - Create login welcome page of list of posts.
+- Ability to visit other people's profiles
+- Add back button
 - Add Ajax to comments / categories
 - Google Maps
     - And styling it.
+- Add details to post (state, division, county, date)

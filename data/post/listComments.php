@@ -32,11 +32,16 @@
                             <div class="text-left">
                                 <div class="pr-3 text-black">' . $item["username"] . '</div>
                                 <div class="pr-3">' . $item["comment_message"] . '</div>  
-                            </div>        
+                            </div>
+                            <div class="text-right">
+                            <a href="#"><i class="fa fa-flag"></i></i></a><br/>
+                            </div>          
                         </div> 
                     ';
                     }
                 }
         } else {
-            echo "make a comment!";
+            if (!isset($_POST['display'])) {
+                echo "make a comment!";
+            }
         }

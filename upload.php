@@ -21,11 +21,11 @@ require './data/head.php';
                 <div class="col-lg-9">
                     <div class="p-md-4">
                         <div class="d-flex flex-wrap justify-content-center">
-                            <div id="uploadContainer" class="px-md-2">
+                            <div class="px-md-2">
                                 <h5 class="text-center">Upload</h5>
                                 <?php require './data/upload/uploadPost.php' ?>
-                                <div class="white-bg borderRadius my-2 text-left shadow-sm ">
-                                    <h5 class="py-3 text-center font-bold blue-bg text-white">Create Post</h5>
+                                <div id="uploadContainer" class="white-bg borderRadius my-3 text-left shadow-sm">
+                                    <h5 class="py-3 text-center font-bold blue-bg text-white borderRadius">Create Post</h5>
                                     <div class="d-flex justify-content-center" id="imageContent">
                                         <img class="img-fluid" id="img" />
                                     </div>
@@ -35,12 +35,12 @@ require './data/head.php';
                                             <input id="upload" class="" name="img" type="file" class="form-control-file" required>
                                         <!-- </div>
                                         <div class="form-group"> -->
-                                            <div id="displayForms" class="my-3">
+                                            <div id="displayForms" class="my-3 hidden">
                                                 <!-- <div class="px-3"> -->
                                                     <label for="details">Add a Description</label>
                                                     <textarea class="form-control light-bg no-border my-2" name="details" id="details" rows="4" style="width:18rem" placeholder="Write a description" required></textarea>
                                                     <label for="details">County</label>
-                                                    <input class="form-control light-bg no-border type="text" name="county" placeholder="County" style="width:18rem" required>
+                                                    <input class="form-control light-bg no-border type="text" name="county" placeholder="County" style="width:18rem">
                                                     <input type="hidden" name="display" value="1">
                                                     <?php require './data/upload/uploadForms.php' ?>
 

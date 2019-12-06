@@ -8,8 +8,8 @@
     $divisions = $_GET['divisions'];
 
     $typeCheck = isset($type) ? "types.type_id = $type ": '';
-    $divisionCheck = isset($divisions) ? "AND divisions.division_id = $divisions" : '';
-    $stateCheck = isset($state) ? "AND states.state_id = $state" : '';
+    $divisionCheck = isset($divisions) ? "divisions.division_id = $divisions" : '';
+    $stateCheck = isset($state) ? "states.state_id = $state" : '';
     $whereCheck = $typeCheck || $divisionCheck || $stateCheck ? "WHERE" : '';
 
     $sql = "SELECT profiles.profile_id, profiles.username, profiles.profile_img, posts.*, types.*, divisions.*

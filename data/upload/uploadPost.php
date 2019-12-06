@@ -26,12 +26,14 @@ $county = $_POST['county'];
 // }
 
 if (isset($_POST['submit'])) {
-    $sqli = "INSERT INTO railpix.posts (post_id, img_str, category, division_ref, details, user_id, county, state_ref, google_ref)
-            VALUES (NULL,'" . $file . "'," . $type . "," . $divisions . ",'" . $description . "'," . $userId . ", '" . $county . "', " . $state . ", 0)";
-    $set = $connect->query($sqli);
-    if (!$set) {
+    $sqli = $connect->prepare("INSERT INTO railpix.posts (post_id, img_str, category, division_ref, details, user_id, county, state_ref, google_ref)
+            VALUES (NULL,'" . $file . "'," . $type . "," . $divisions . ", ? ," . $userId . ", '" . $county . "', " . $state . ", 0)");
+    $sqli->bind_param('s', $description);
+    $sqli->execute();
+
+    if (!$sqli) {
         echo '<div class="text-center w-100 py-3 my-2 white-bg borderRadius"><i class="fa fa-times px-2"></i>Error, Please try again later</div>';
-    } elseif ($set) {
+    } elseif ($sqli) {
         echo '<div class="text-center w-100 py-3 my-2 blue-bg text-white borderRadius"><i class="fa fa-check px-2"></i>Post Uploaded!</div>';
     }
 }

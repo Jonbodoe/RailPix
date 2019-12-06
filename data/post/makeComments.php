@@ -26,15 +26,17 @@ if ($result->num_rows > 0) {
 $user = $user_id;
 $blog = $blog_id;
 
-echo $_POST['comment'];
+// echo $_POST['comment'];
 if ($_POST['comment']) {
-    $sql = "INSERT INTO railpix.comments (comment_id, user_ref, post_ref, comment_message, comment_date)
-        VALUES (NULL, '" . $user . "','" . $blog . "','" . $comment . "','" . $date . "')";
-    $set = $connect->query($sql);
-    if (!$set) {
+    $sql = $connect->prepare("INSERT INTO railpix.comments (comment_id, user_ref, post_ref, comment_message, comment_date)
+        VALUES (NULL, '" . $user . "','" . $blog . "', ? ,'" . $date . "')");
+    $sql->bind_param('s', $comment);
+    $sql->execute();
+
+    if (!$sql) {
         die('Something went wrong.');
-    } elseif ($result) {
-        echo "added comment!";
+    } elseif ($sql) {
+        echo "<br>added comment!";
     }
 }
 

@@ -167,7 +167,7 @@ form select.lgt-select {
     width: 15rem;
 }
 #category {
-    height: 100rem;
+    height: 100vh;
     position: relative;
 }
 
@@ -207,6 +207,10 @@ a.nav-link:hover {
 .post:hover {
     background-color: #f0f1f2;
     opacity: 0.8;
+}
+#uploadContainer{
+    max-width: 37rem;
+    min-width: 30rem;
 }
 #pageBlur{
     position: fixed;
@@ -260,3 +264,4 @@ a.login {
 h1, h2, h3, h4, h5 {
     margin: 0px;
 }
+
