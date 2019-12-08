@@ -25,6 +25,7 @@
                                     require './data/post/makeComments.php';
                                     // require './data/profile/ajaxComments.php';
                                 ?>
+                                
                                 <!-- half of postdetails static info  -->
                                         <form action="" method="post" class="py-3">
                                             <div class="form-group">

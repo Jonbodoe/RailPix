@@ -1,5 +1,5 @@
 <?php
-require './data/head.php';
+    require './data/head.php';
 ?>
 
 <body>
@@ -37,10 +37,9 @@ require './data/head.php';
                                                     <label for="details">Add a Description</label>
                                                     <textarea class="form-control light-bg no-border my-2" name="details" id="details" rows="4" style="width:18rem" placeholder="Write a description" required></textarea>
                                                     <label for="details">County</label>
-                                                    <input class="form-control light-bg no-border type="text" name="county" placeholder="County" style="width:18rem">
+                                                    <input class="form-control light-bg no-border" type="text" name="county" placeholder="County" style="width:18rem">
                                                     <input type="hidden" name="posted" value="1">
                                                     <?php require './data/upload/uploadForms.php' ?>
-
                                                     <button id="submitComment" name="submit" type="submit" class="btn btn-primary my-4">Submit</button>
                                             </div>
                                         </div>

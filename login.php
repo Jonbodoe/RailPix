@@ -27,8 +27,6 @@
                             <form action="" method="post">
                                 <h1 class="serif text-white py-3">Login to RailPix</h1>
                                 <div class="form-group">
-                                    <label for="inputUser" class="col-form-label text-white">Username</label>
-                                    <input type="text" name="inputUser" class="form-control black-bg text-white" id="inputUser" placeholder="Username">
                                 </div>
                                 <div class="form-group">
                                     <label for="inputPassword" class="col-form-label text-white">Password</label>

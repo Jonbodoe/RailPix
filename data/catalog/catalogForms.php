@@ -1,8 +1,12 @@
 <?php
     require (dirname(__FILE__).'/../dbConn.php');
-
-    $listTables = ['type_freight'=>'type','division_title'=>'division','state_name'=>'state'];
-    echo '<form class="">';
+    // ,'state_name'=>'state'
+    $listTables = ['type_freight'=>'type','division_title'=>'division'];
+    echo '<form class="">
+            <label for="search" class="col-form-label text-white">Search</label>
+            <input type="text" name="search" class="form-control black-bg text-white my-2" id="search" placeholder="Search for..." autocomplete="off">
+    
+    ';
 
     foreach ($listTables as $table => $value) {
         $values = "".$value."s";

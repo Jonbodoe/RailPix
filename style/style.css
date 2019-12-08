@@ -155,7 +155,7 @@ footer a {
     font-size: 18px;
 }
 
-input#inputPassword, input#inputUser, form select.blk-select {
+input#inputPassword, input#inputUser, input#search, form select.blk-select, form input.blk-select {
     background-color: #4a4e5e;
     border: 0px;
 }

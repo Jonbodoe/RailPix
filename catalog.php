@@ -17,9 +17,9 @@
                         <div class="px-4">
                             <div class="black-line"></div>
                             <h5 class=" py-2 font-weight-bold">Catalog</h5>
-                            <?php 
-                                require './data/catalog/catalogForms.php';
-                            ?>
+                                <?php 
+                                    require './data/catalog/catalogForms.php';
+                                ?>
                         </div>
                     </div>
                 </div>

@@ -9,10 +9,11 @@
         if($result->num_rows > 0) {
             while($item = $result->fetch_assoc()) {
                 echo '
+                <a class="post-container" href="post.php?post='. $item['post_id'] .'">
                 <div class="card m-3 d-inline-block" style="max-width: 20rem;">
                     <div class="card-header blue-bg shadow d-flex flex-row">
                         <img class="img-mini" src="./img/'. $item['profile_img'] .'" alt="photo of user"/>
-                        <div class="align-self-center px-3">' . $item['username'] . '</div>
+                        <div class="align-self-center px-3 text-white">' . $item['username'] . '</div>
                     </div>
                     <img class="card-img-top" src="./img/'. $item['img_str'] .'" alt="Card image cap">
                     <div class="card-body blk-md-text">
@@ -20,7 +21,9 @@
                         <p class="card-text">' . $item['details'] .'</p>
                     </div>
                 </div>
+                </a>
                 ';
+                // not links yet
             }
         } else {
             echo '<div class="blk-md-text">No posts available</div>';
