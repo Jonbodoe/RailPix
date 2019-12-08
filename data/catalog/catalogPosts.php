@@ -5,23 +5,34 @@
     $state = $_GET['state'];
     $divisions = $_GET['divisions'];
     $search = $_GET['search'];
+    $find= mysqli_real_escape_string($connect, $search);
+
 
     $typeCheck = isset($type) ? "types.type_id = $type": '';
     $and1 = isset($type) ? "AND" : '';
     $divisionCheck = isset($divisions) ? "divisions.division_id = $divisions" : '';
-    $searchCheck = isset($search) ? "WHERE posts.details LIKE '%$search%'" : '';
+    $searchCheck = isset($search) ? "posts.details LIKE '%$find%'" : '';
     // $stateCheck = isset($state) ? "states.state_id = $state" : '';
-    $and2 = isset($type) || isset($divisions) ? "AND" : '';
-    $whereCheck = $typeCheck || $divisionCheck || $stateCheck ? "WHERE" : '';
+    $and2 = isset($type) && isset($divisions) ? "AND" : '';
+    $whereCheck = $typeCheck || $divisionCheck || $searchCheck ? "WHERE" : '';
 
     $sql = "SELECT profiles.profile_id, profiles.username, profiles.profile_img, posts.*, types.*, divisions.*
             FROM profiles 
             JOIN posts ON (profiles.profile_id = posts.user_id)
             JOIN types on (posts.category = types.type_id)
             JOIN divisions on (divisions.division_id = posts.division_ref)
-            " . $whereCheck ." ". $typeCheck . "  " . $and1 . " " . $divisionCheck . " " . $and2 . " ";
+            " . $whereCheck ." ". $typeCheck . "  " . $and1 . " " . $divisionCheck . " " . $and2 . " " . $searchCheck . " ";
 
-        
+    if (isset($_GET['display'])) {    
+        echo '<div class="text-center w-100 py-3 my-2 white-bg borderRadius">              
+                Keywords: '. $search. '   |   
+                Category: ' . $type . '   |   
+                Division:  ' . $divisions . 
+            '</div>';
+    } else {
+        echo '';
+    }
+
     $result = $connect->query($sql);
     if ($result->num_rows > 0) {
         while ($item = $result->fetch_assoc()) {
@@ -42,7 +53,8 @@
             ';
         }
     } else {
-        echo "no results ):";
+        echo '<div class="text-center w-100 py-3 my-2 white-bg borderRadius">No results found</div>';
     }
+
 
 ?>

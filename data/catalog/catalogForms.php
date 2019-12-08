@@ -29,6 +29,7 @@
         echo '</select><br><br>';
     }
     echo '
+            <input type="hidden" name="display" value="1">
             <button id="submitComment" type="submit" class="btn btn-primary">Submit
             </button>
         </form>';
