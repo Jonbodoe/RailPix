@@ -31,7 +31,7 @@
                 <div class="text-center blk-md-text py-4">
                     <h2 class="serif">Photo Gallery</h2>
                     <p>Search and find active and inactive locomotives, boxcars, <br>reefers, grainers, and railroad infrustructure. </p>
-                    <form class="py-3" action="#">
+                    <form class="py-3" action="catalog.php">
                         <button id="explore" type="submit" class="btn red-bg text-white">Explore</button>
                     </form>
                 </div>

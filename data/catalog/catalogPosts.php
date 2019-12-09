@@ -23,14 +23,12 @@
             JOIN divisions on (divisions.division_id = posts.division_ref)
             " . $whereCheck ." ". $typeCheck . "  " . $and1 . " " . $divisionCheck . " " . $and2 . " " . $searchCheck . " ";
 
-    if (isset($_GET['display'])) {    
-        echo '<div class="text-center w-100 py-3 my-2 white-bg borderRadius">              
+    if (isset($_GET['display']) || isset($_GET['search'])) {    
+        echo '<div class="text-center w-100 py-2 my-1 borderRadius">              
                 Keywords: '. $search. '   |   
                 Category: ' . $type . '   |   
                 Division:  ' . $divisions . 
             '</div>';
-    } else {
-        echo '';
     }
 
     $result = $connect->query($sql);
@@ -54,7 +52,13 @@
         }
     } else {
         echo '<div class="text-center w-100 py-3 my-2 white-bg borderRadius">No results found</div>';
+        echo '<div class=" w-100 p-3 my-1 borderRadius">
+                <div class="d-flex justify-content-center">    
+                Not finding any results? Try searching for category one at a time! However, there are some categories that interlap 
+                </div>       
+            </div>';
     }
+
 
 
 ?>

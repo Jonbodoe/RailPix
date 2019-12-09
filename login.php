@@ -24,21 +24,26 @@
                 <div class="col-sm-5">
                     <div class="d-flex justify-content-center black-bg w-100 h-100">
                         <div class="align-self-center">
-                            <form action="" method="post">
+                            <form action="" method="post" name="login">
                                 <h1 class="serif text-white py-3">Login to RailPix</h1>
                                 <div class="form-group">
+                                    <label for="inputUser" class="col-form-label text-white">Username</label>
+                                    <input type="text" name="username" class="form-control black-bg text-white" id="inputUser" placeholder="Username">
                                 </div>
                                 <div class="form-group">
                                     <label for="inputPassword" class="col-form-label text-white">Password</label>
-                                    <input type="password" name="inputPass" class="form-control black-bg text-white" id="inputPassword" placeholder="Password">
+                                    <input type="password" name="password" class="form-control black-bg text-white" id="inputPassword" placeholder="Password">
                                 </div>
                                 <input type="hidden" name="display" value="1">
                                 <div class="form-group py-3">
                                     <div class="">
-                                        <button type="submit" class="btn btn-primary">Sign in</button>
+                                        <button type="submit" name="submit" class="btn btn-primary">Sign in</button>
                                     </div>
                                 </div>
-                                <?php require "./data/login/loginUser.php"; ?>
+                                <p class="wht-md-text">Not registered yet? <a href='register.php'>Register Here</a></p>
+                                <?php 
+                                    require "./data/login/loginUser.php";                     
+                                ?>
                             </form>
                         </div>
                     </div>
