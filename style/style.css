@@ -142,6 +142,13 @@ footer a {
     background-position: center;
     background-attachment: scroll;
 }
+#dashboardImg {
+    background-image: url('../img/bridgewe.jpg');
+    height: 24rem;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
 
 #loginImg {
     background-image: url('../img/loginImg.jpg');

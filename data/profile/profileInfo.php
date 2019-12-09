@@ -26,7 +26,7 @@
             }
 
         } else {
-            echo '<div class="blk-md-text">No posts available</div>';
+            echo '<div class="blk-md-text">Profile not available</div>';
         }
 
     // ISSUE CANNOT KEEP GET VARIABLE FROM LOGIN TO STAY IN EACH PAGE AFTER INITIAL LOGIN.

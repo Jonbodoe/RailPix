@@ -13,7 +13,8 @@ $noLogin = array(
 );
 
 $login  = array(
-    'index.php' => 'Home', 
+    // 'index.php' => 'Home', 
+    'dashboard.php' => 'Dashboard',
     'catalog.php' => 'Catalog', 
     'profile.php' => 'Profile', 
     'upload.php' => 'Upload',

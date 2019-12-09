@@ -18,7 +18,7 @@
             if($rows==1){
                 $_SESSION['username'] = $username;
                         // Redirect user to index.php
-                echo "<script type='text/javascript'> document.location = 'index.php'; </script>";
+                echo "<script type='text/javascript'> document.location = 'dashboard.php'; </script>";
                 // header('Location:index.php', true,  301 );
                 // exit;
             }else{
