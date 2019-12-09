@@ -1,21 +1,12 @@
 Some Other Day
 
-- Create login welcome page of list of posts.
+- Finish Dashboard Page of featured / recent works.
+    - Maybe add google map to dashboard
 - Add Ajax to comments / categories inserts
-
-Weekend:
-
-- Add search bar into categories form
-- Make search bar on the navbar work
-- PhpMyAdmin search query
-- (post,get) query to sql statement in the where section of the select
-    - Find what category to search from.
+    - If ajax doesnt work, add back button
 
 Optional: 
 
-- Google Maps
-    - And styling it.
 - Add details to post (state, division, county, date)
-- Add back button
 - Ability to visit other people's profiles
 
