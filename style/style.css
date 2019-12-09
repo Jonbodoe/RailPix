@@ -144,7 +144,7 @@ footer a {
 }
 #dashboardImg {
     background-image: url('../img/bridgewe.jpg');
-    height: 24rem;
+    height: 26rem;
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
@@ -270,5 +270,12 @@ a.login {
 }
 h1, h2, h3, h4, h5 {
     margin: 0px;
+}
+#map-canvas {
+    height: 25rem;
+    width: 100%;
+  }
+#google {
+    height: 35rem;
 }
 
