@@ -11,7 +11,7 @@
     $typeCheck = isset($type) ? "types.type_id = $type": '';
     $and1 = isset($type) ? "AND" : '';
     $divisionCheck = isset($divisions) ? "divisions.division_id = $divisions" : '';
-    $searchCheck = isset($search) ? "posts.details LIKE '%$find%'" : '';
+    $searchCheck = isset($search) ? "posts.details or types.type_freight LIKE '%$find%'" : '';
     // $stateCheck = isset($state) ? "states.state_id = $state" : '';
     $and2 = isset($type) && isset($divisions) ? "AND" : '';
     $whereCheck = $typeCheck || $divisionCheck || $searchCheck ? "WHERE" : '';
@@ -54,7 +54,7 @@
         echo '<div class="text-center w-100 py-3 my-2 white-bg borderRadius">No results found</div>';
         echo '<div class=" w-100 p-3 my-1 borderRadius">
                 <div class="d-flex justify-content-center">    
-                Not finding any results? Try searching for category one at a time! However, there are some categories that interlap 
+                    Not finding any results? Try searching for category one at a time! However, there are some categories that interlap 
                 </div>       
             </div>';
     }

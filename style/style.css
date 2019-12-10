@@ -272,10 +272,17 @@ h1, h2, h3, h4, h5 {
     margin: 0px;
 }
 #map-canvas {
-    height: 25rem;
+    height: 30rem;
     width: 100%;
   }
-#google {
-    height: 35rem;
+#upload-box {
+    background-color: #2E313B;
+    transition: 0.3s
 }
+
+#upload-box:hover {
+    background-color:#3f81f2;
+    transition: 0.4s
+}
+
 
