@@ -31,7 +31,10 @@
         </div>
     </section>
     <div id="bottom"></div>
-    <?php require './assets/footer.php' ?>
+    <?php 
+        require './assets/footer.php';
+        $connect->close(); 
+    ?>
 </body>
 
 </html>

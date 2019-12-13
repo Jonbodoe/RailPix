@@ -43,3 +43,4 @@
     <script src="./js/filterResults.js"></script>
 
 </html>
+<?PHP $connect->close(); ?>

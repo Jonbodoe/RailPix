@@ -166,7 +166,8 @@ input#inputPassword, input#inputUser, input#search, form select.blk-select, form
     background-color: #4a4e5e;
     border: 0px;
 }
-form select.lgt-select {
+
+form input.white-form {
     background-color: #f0f1f2;
 }
 
@@ -290,5 +291,16 @@ h1, h2, h3, h4, h5 {
 .card-footer{
     background-color:#5d8fe3;
     color:white;
+}
+#register {
+    height: 46rem;
+}
+#registerImg {
+    /* background-color: #5d8fe3; */
+    background-image: url('../img/people.jpg');
+    height: 40rem;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
 }
 

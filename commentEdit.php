@@ -59,3 +59,5 @@
     require './assets/footer.php';
     ?>
     <script src="./js/postEvents.js"></script>
+
+    <?PHP $connect->close(); ?>

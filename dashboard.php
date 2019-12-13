@@ -108,7 +108,8 @@
             initialize();
     </script>
     <?php
-    require './assets/footer.php';
+        require './assets/footer.php';
+        $connect->close();
     ?>
 
 </body>

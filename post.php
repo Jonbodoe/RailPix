@@ -54,7 +54,8 @@
         </div>
     </section>
     <?php
-    require './assets/footer.php';
+        require './assets/footer.php';
+        $connect->close();
     ?>
     <script type="text/javascript" src="./js/postEvents.js"></script>
     <script src="./js/submitComment.js"></script>

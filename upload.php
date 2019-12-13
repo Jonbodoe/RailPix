@@ -53,7 +53,10 @@
             </div>
         </div>
     </section>
-    <?php require './assets/footer.php' ?>
+    <?php 
+        require './assets/footer.php';
+        $connect->close();
+    ?>
     <script type="module" src="./js/popup.js"></script>
     <script type="module" src="./js/fileUpload.js"></script>
 </body>
