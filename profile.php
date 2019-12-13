@@ -2,10 +2,9 @@
 
 <body>
     <?php
-    require './assets/navbar.php';
-    require './assets/popupForm.php';
+        require './assets/navbar.php';
+        // require './data/isLogin.php';
     ?>
-
     <section id="profile">
         <div class="container-fluid pt-5">
             <div class="row p-xl-4">
@@ -31,6 +30,7 @@
             </div>
         </div>
     </section>
+    <div id="bottom"></div>
     <?php require './assets/footer.php' ?>
 </body>
 

@@ -1,4 +1,8 @@
-<?php require './data/head.php'; ?>
+<?php 
+    require './data/head.php'; 
+    require './data/isLogin.php';
+?>
+
 
 <body>
     <?php

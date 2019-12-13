@@ -32,6 +32,7 @@ if (isset($_POST['posted'])) {
         echo '<div class="text-center w-100 py-3 my-2 white-bg borderRadius"><i class="fa fa-times px-2"></i>Error, Please try again later</div>';
     } elseif ($sqli) {
         echo '<div class="text-center w-100 py-3 my-2 blue-bg text-white borderRadius"><i class="fa fa-check px-2"></i>Post Uploaded!</div>';
+        echo '<div class="text-center my-5">Visit post click <a href="profile.php#bottom">here</a></div>';
     }
 }
 

@@ -10,7 +10,7 @@
             while($item = $result->fetch_assoc()) {
                 echo '
                 <a class="post-container" href="post.php?post='. $item['post_id'] .'">
-                <div class="card m-3 d-inline-block" style="max-width: 20rem;">
+                <div class="card m-3 d-inline-block post" style="max-width: 20rem;">
                     <div class="card-header blue-bg shadow d-flex flex-row">
                         <img class="img-mini" src="./img/'. $item['profile_img'] .'" alt="photo of user"/>
                         <div class="align-self-center px-3 text-white">' . $item['username'] . '</div>

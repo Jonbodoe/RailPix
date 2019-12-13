@@ -248,6 +248,9 @@ a.nav-link:hover {
     width: 100%;
     background-color: #4a4e5e;
 }
+.black-md-bg{
+    background-color: #4a4e5e;
+}
 
 #img {
     width: 85%;
@@ -272,7 +275,7 @@ h1, h2, h3, h4, h5 {
     margin: 0px;
 }
 #map-canvas {
-    height: 30rem;
+    height: 26rem;
     width: 100%;
   }
 #upload-box {
@@ -284,5 +287,8 @@ h1, h2, h3, h4, h5 {
     background-color:#3f81f2;
     transition: 0.4s
 }
-
+.card-footer{
+    background-color:#5d8fe3;
+    color:white;
+}
 

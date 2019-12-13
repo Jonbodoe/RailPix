@@ -2,7 +2,8 @@
 
 <body>
     <?php
-    require './assets/navbar.php';
+        require './assets/navbar.php';
+        require './data/isLogin.php';
     ?>
     <section>
         <div class="container-fluid">

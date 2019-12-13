@@ -40,7 +40,7 @@
                                         <button type="submit" name="submit" class="btn btn-primary">Sign in</button>
                                     </div>
                                 </div>
-                                <p class="wht-md-text">Not registered yet? <a href='register.php'>Register Here</a></p>
+                                <!-- <p class="wht-md-text">Not registered yet? <a href='register.php'>Register Here</a></p> -->
                                 <?php 
                                     require "./data/login/loginUser.php";                     
                                 ?>

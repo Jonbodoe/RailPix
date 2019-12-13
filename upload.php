@@ -4,8 +4,9 @@
 
 <body>
     <?php
-    require './assets/navbar.php';
-    require './assets/popupForm.php';
+        require './assets/navbar.php';
+        // require './assets/popupForm.php';
+        require './data/isLogin.php';
     ?>
 
     <section id="profile">
@@ -25,7 +26,7 @@
                                 <h5 class="text-center">Upload</h5>
                                 <?php require './data/upload/uploadPost.php' ?>
                                 <div id="uploadContainer" class="white-bg borderRadius my-3 text-left shadow-sm">
-                                    <h5 class="py-3 text-center font-bold blue-bg text-white borderRadius">Create Post</h5>
+                                    <!-- <h5 class="py-3 text-center font-bold black-bg text-white borderRadius">Create Post</h5> -->
                                     <div class="d-flex justify-content-center" id="imageContent">
                                         <img class="img-fluid" id="img" />
                                     </div>

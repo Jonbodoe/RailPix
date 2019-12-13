@@ -12,7 +12,7 @@
     $and1 = isset($type) ? "AND" : '';
     $divisionCheck = isset($divisions) ? "divisions.division_id = $divisions" : '';
     $searchCheck = isset($search) ? "posts.details or types.type_freight LIKE '%$find%'" : '';
-    // $stateCheck = isset($state) ? "states.state_id = $state" : '';
+
     $and2 = isset($type) && isset($divisions) ? "AND" : '';
     $whereCheck = $typeCheck || $divisionCheck || $searchCheck ? "WHERE" : '';
 
@@ -36,7 +36,7 @@
         while ($item = $result->fetch_assoc()) {
             echo '
             <a class="post-container" href="post.php?post='. $item['post_id'] .'">
-                <div class="post card m-4 d-inline-block no-border shadow-sm" style="max-width: 23rem;">
+                <div class="post text-left card m-4 d-inline-block no-border shadow-sm" style="max-width: 23rem;">
                     <div class="card-header shadow d-flex flex-row">
                         <img class="img-mini" src="./img/'. $item['profile_img'] .'" alt="photo of user"/>
                         <div class="align-self-center px-3">' . $item['username'] . '</div>
