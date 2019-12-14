@@ -9,11 +9,11 @@
 
 
     $typeCheck = isset($type) ? "types.type_id = $type": '';
-    $and1 = isset($divisions) && isset($type) ? "AND" : '';
+    $and1 = isset($divisions) && isset($type) || isset($divisions) && $find != '' || isset($type) && $find != '' ? "AND" : '';
     $divisionCheck = isset($divisions) ? "divisions.division_id = $divisions" : '';
-    $searchCheck = isset($search) && $find != '' ? "posts.details or types.type_freight LIKE '%$find%'" : '';
+    $searchCheck = isset($search) && $find != '' ? "posts.details LIKE '%$find%'" : '';
 
-    $and2 = isset($type) && isset($divisions) && isset($search) ? "AND" : '';
+    $and2 = isset($type) && isset($divisions) && isset($search) && $find != '' ? "AND" : '';
     $whereCheck = $typeCheck || $divisionCheck || $searchCheck ? "WHERE" : '';
 
     $sql = "SELECT profiles.profile_id, profiles.username, profiles.profile_img, posts.*, types.*, divisions.*
@@ -30,6 +30,8 @@
                 Category: ' . $type . '   |   
                 Division:  ' . $divisions . 
             '</div>';
+        // echo '<br>';
+        // echo $sql;
     }
 
     $result = $connect->query($sql);

@@ -1,4 +1,7 @@
-<?php require './data/head.php'; ?>
+<?php 
+    require './data/head.php'; 
+    require './googleapi.php';
+?>
 
 <body>
     <?php
@@ -15,22 +18,21 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
                 <div class="col-lg-9 p-md-4">
                     <div class="w-100 px-md-2 text-center d-flex justify-content-center">
                         <div class="">
                             <h5 class="">Post Details</h5>
                             <div class=" mt-4 white-bg shadow" style="max-width: 43rem">
                                 <?php
-                                require './data/post/postDetail.php';
-                                require './data/post/listComments.php';
-                                require './data/post/makeComments.php';
+                                    require './data/post/postDetail.php';
+                                    require './assets/googleMap.php';
+                                    echo '<div class="font-weight-bold">
+                                            Comments
+                                        </div>';
+                                    require './data/post/listComments.php';
+                                    require './data/post/makeComments.php';
                                 // require './data/profile/ajaxComments.php';
                                 ?>
-
                                 <!-- half of postdetails static info  -->
                                 <form action="" method="post" class="py-3">
                                     <div class="form-group">
