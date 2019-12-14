@@ -94,7 +94,7 @@
                                 <input id="upload" class="" name="img-profile" type="file" class="form-control-file" required>
                                 <div class="form-group">
                                     <label class="col-form-label">Name</label>
-                                    <input type="text" name="name" class="form-control white-form w-100 no-border" placeholder="Name">
+                                    <input type="text" name="name" class="form-control light-bg white-form w-100 no-border" placeholder="Name">
                                 </div>
                                 <div id="displayForms" class="my-3">
                                     <label for="details">Add a Biography</label>

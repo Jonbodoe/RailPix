@@ -5,15 +5,15 @@
     $state = $_GET['state'];
     $divisions = $_GET['divisions'];
     $search = $_GET['search'];
-    $find= mysqli_real_escape_string($connect, $search);
+    $find = mysqli_real_escape_string($connect, $search);
 
 
     $typeCheck = isset($type) ? "types.type_id = $type": '';
-    $and1 = isset($type) ? "AND" : '';
+    $and1 = isset($divisions) && isset($type) ? "AND" : '';
     $divisionCheck = isset($divisions) ? "divisions.division_id = $divisions" : '';
-    $searchCheck = isset($search) ? "posts.details or types.type_freight LIKE '%$find%'" : '';
+    $searchCheck = isset($search) && $find != '' ? "posts.details or types.type_freight LIKE '%$find%'" : '';
 
-    $and2 = isset($type) && isset($divisions) ? "AND" : '';
+    $and2 = isset($type) && isset($divisions) && isset($search) ? "AND" : '';
     $whereCheck = $typeCheck || $divisionCheck || $searchCheck ? "WHERE" : '';
 
     $sql = "SELECT profiles.profile_id, profiles.username, profiles.profile_img, posts.*, types.*, divisions.*
@@ -21,7 +21,8 @@
             JOIN posts ON (profiles.profile_id = posts.user_id)
             JOIN types on (posts.category = types.type_id)
             JOIN divisions on (divisions.division_id = posts.division_ref)
-            " . $whereCheck ." ". $typeCheck . "  " . $and1 . " " . $divisionCheck . " " . $and2 . " " . $searchCheck . " ";
+            " . $whereCheck ." ". $typeCheck . "  " . $and1 . " " . $divisionCheck . " " . $and2 . " " . $searchCheck . " 
+            ";
 
     if (isset($_GET['display']) || isset($_GET['search'])) {    
         echo '<div class="text-center w-100 py-2 my-1 borderRadius">              
