@@ -34,7 +34,7 @@
                                 <div class="pr-3">' . $item["comment_message"] . '</div>  
                             </div>
                             <div class="text-right">
-                            <a href="#"><i class="fa fa-flag"></i></i></a><br/>
+                            <a class="blk-md-text" href="#"><i class="fa fa-flag"></i></i></a><br/>
                             </div>          
                         </div> 
                     ';

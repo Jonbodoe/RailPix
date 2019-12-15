@@ -24,7 +24,7 @@
             }else{
                 echo "<div class='form text-white'>
                     <p>Username/password is incorrect.</p>
-                    <p>Use username: Jonbodoe / password: ##yearight</p><br>
+                    <p>Use the admin account, username: Jonbodoe / password: ##yearight</p><br>
                     
                 </div>";
             }

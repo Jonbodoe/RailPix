@@ -1,7 +1,9 @@
-<?php 
-    require './data/head.php'; 
-    require './googleapi.php';
+<?php
+require './data/head.php';
+require './googleapi.php';
 ?>
+
+
 
 <body>
     <?php
@@ -24,17 +26,19 @@
                             <h5 class="">Post Details</h5>
                             <div class=" mt-4 white-bg shadow" style="max-width: 43rem">
                                 <?php
-                                    require './data/post/postDetail.php';
-                                    require './assets/googleMap.php';
-                                    echo '<div class="font-weight-bold">
+                                require './data/post/postDetail.php';
+                                require './assets/googleMap.php';
+                                echo '<div class="font-weight-bold">
                                             Comments
-                                        </div>';
-                                    require './data/post/listComments.php';
-                                    require './data/post/makeComments.php';
+                                        </div>'; ?>
+                                <?php echo '<div id="comments">';
+                                require './data/post/listComments.php';
+                                echo '</div>';
+                                require './data/post/makeComments.php';
                                 // require './data/profile/ajaxComments.php';
                                 ?>
                                 <!-- half of postdetails static info  -->
-                                <form action="" method="post" class="py-3">
+                                <form method="post" class="py-3">
                                     <div class="form-group">
                                         <label for="comment">Add a comment</label>
                                         <textarea class="form-control w-75" name="comment" id="comment" rows="3"></textarea>
@@ -56,9 +60,10 @@
         </div>
     </section>
     <?php
-        require './assets/footer.php';
-        $connect->close();
+    require './assets/footer.php';
+    $connect->close();
     ?>
-    <script type="text/javascript" src="./js/postEvents.js"></script>
+    <!-- <script type="text/javascript" src="./js/postEvents.js"></script> -->
+    <script type="text/javascript" src="./js/ajaxComments.js"></script>
     <script src="./js/submitComment.js"></script>
 </body>

@@ -36,6 +36,8 @@ if ($_POST['comment']) {
         die('Something went wrong.');
     } elseif ($sql) {
         echo "<br>added comment!";
+        echo "<div>click <a href='post.php?post=" . $post . "'>here</a> to refresh</div>";
+        
     }
 }
 

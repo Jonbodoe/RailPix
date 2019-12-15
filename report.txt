@@ -1,12 +1,6 @@
 Some Other Day
 
-- Finish Dashboard Page of featured / recent works.
-    - Maybe add google map to dashboard
 - Add Ajax to comments / categories inserts
     - If ajax doesnt work, add back button
 
-Optional: 
-
-- Add details to post (state, division, county, date)
-- Ability to visit other people's profiles
 

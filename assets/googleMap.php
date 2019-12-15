@@ -30,13 +30,10 @@ if ($result->num_rows > 0) {
                     "color": "#007bff"
                 }]
             }];
-
-            // Create a new StyledMapType object, passing it the array of styles, as well as the name to be displayed on the map type control.
             var styledMap = new google.maps.StyledMapType(styles, {
                 name: "Styled Map"
             });
 
-            // Create a map object, and include the MapTypeId to add to the map type control.
             var mapOptions = {
                 zoom: 13,
                 center: new google.maps.LatLng(' . $item['latitude'] . ',' . $item['longitude'] . '),

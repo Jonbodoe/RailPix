@@ -20,6 +20,12 @@ Password: ##yearight
 
 Some things worth noting:
 
-- I havent added user's functionality of adding google maps or not, only the photos that have the google maps will be the first 4 posts.
+- I havent added user's choice of adding google maps or not, only the photos that have the google maps will be the first 4 posts.
 - The pages are not fully responsive past < 700px width of the screen.
 - When filtering, there isnt enough data that will satisfy all combinations of divisions and types, however you can use both or all three if you can find one
+- AJAX is not present in the project, however i will work on the UX over break to polish the product more
+
+Structure:
+- Assets folder: common HTML elements such as navbar, footer, etc. No php logic or js.
+- Data folder: files that grab data from the database or other php logic that are occuring without the database
+- Img folder: all the files that are used and uploaded are in this file, when creating an account you can re-use these images
