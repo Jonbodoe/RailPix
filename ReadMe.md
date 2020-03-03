@@ -1,4 +1,5 @@
 To get started, you can either create an account or start with an existing account:
+
 Username: Jonbodoe
 Password: ##yearight
 
