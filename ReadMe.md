@@ -1,3 +1,7 @@
+To get started, you can either create an account or start with an existing account:
+Username: Jonbodoe
+Password: ##yearight
+
 Current Functionalities
 
 - You can start with a brand new account or use an existing
@@ -14,16 +18,11 @@ Current Functionalities
     - It is possible to use all search, division and type forms however there are limitations *
     - You can go to the individual posts from the catalog
 
-To get started, you can either create an account or start with an existing account:
-Username: Jonbodoe
-Password: ##yearight
 
 Some things worth noting:
 
 - I havent added user's choice of adding google maps or not, only the photos that have the google maps will be the first 4 posts.
-- The pages are not fully responsive past < 700px width of the screen.
-- When filtering, there isnt enough data that will satisfy all combinations of divisions and types, however you can use both or all three if you can find one
-- AJAX is not present in the project, however i will work on the UX over break to polish the product more
+- The pages are not fully responsive past < 700px width of the screen. The focus of the project was to understand PHP / MySQL
 
 Structure:
 - Assets folder: common HTML elements such as navbar, footer, etc. No php logic or js.
